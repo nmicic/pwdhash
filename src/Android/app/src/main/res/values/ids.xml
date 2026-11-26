@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="site_address" type="id" />
+    <item name="site_password" type="id" />
+    <item name="hashed_password" type="id" />
+    <item name="password_reveal" type="id" />
+    <item name="output_reveal" type="id" />
+    <item name="generate" type="id" />
+    <item name="copy_password" type="id" />
+    <item name="clear_all" type="id" />
+    <item name="clear_on_background" type="id" />
+    <item name="about_credits" type="id" />
+    <item name="status" type="id" />
+</resources>

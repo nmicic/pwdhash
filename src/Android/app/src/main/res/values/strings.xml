@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PwdHash</string>
+    <string name="badge">OFFLINE · ORIGINAL PWDHASH</string>
+    <string name="site_address">Site Address</string>
+    <string name="site_address_hint">example.com or full URL</string>
+    <string name="site_password">Site Password</string>
+    <string name="site_password_hint">Your original password</string>
+    <string name="hashed_password">Hashed Password</string>
+    <string name="hashed_password_hint">Generate to see your result</string>
+    <string name="generate">Generate</string>
+    <string name="copy">Copy</string>
+    <string name="clear">Clear</string>
+    <string name="clear_all">Clear all fields and copied password</string>
+    <string name="copy_password">Copy hashed password</string>
+    <string name="hold_password">Hold to show site password</string>
+    <string name="hold_output">Hold to show hashed password</string>
+    <string name="hold_hint">Hold an eye to reveal. Release to hide.</string>
+    <string name="domain_default">Uses the original website’s domain rules.</string>
+    <string name="domain_hint">Hashing domain: %1$s</string>
+    <string name="initial_status">Nothing saved. No history. No network.</string>
+    <string name="ready_status">Ready when you are. Clears after 5 minutes idle.</string>
+    <string name="generated_status">Generated. Edit either input, then Generate again.</string>
+    <string name="legacy_nul_status">The original algorithm includes invisible characters for this long password. The result is preserved exactly.</string>
+    <string name="copied_status">Copied as sensitive content. Clears after 60 seconds while this app is active.</string>
+    <string name="manual_clear_status">All fields cleared. Nothing saved.</string>
+    <string name="idle_clear_status">Cleared after 5 minutes idle.</string>
+    <string name="background_clear_status">Fields cleared when you left the app.</string>
+    <string name="background_title">Clear when leaving app</string>
+    <string name="background_on">Clears after 5 minutes idle and immediately in the background.</string>
+    <string name="background_off">Keeps fields while switching apps. After 5 minutes idle, clears when Android next runs the app.</string>
+    <string name="clipboard_note">Copy is marked sensitive. Android controls background clipboard expiry.</string>
+    <string name="about">About &amp; credits</string>
+    <string name="about_hide">Hide about &amp; credits</string>
+    <string name="author">Android app developed by Nenad Micic as a personal hobby project, based on Stanford PwdHash.</string>
+    <string name="contact">Contact: pwdhash@nmic.app</string>
+    <string name="source_url">pwdhash.github.io/website/</string>
+    <string name="contributors">Original PwdHash contributors: Blake Ross, Collin Jackson, Nicholas Miyake, Dan Boneh, and John C. Mitchell.</string>
+    <string name="license_heading">Original BSD license</string>
+    <string name="no_email_app">Contact: pwdhash@nmic.app. Open your preferred email app.</string>
+    <string name="no_browser">Original project: https://pwdhash.github.io/website/</string>
+    <string name="generation_error">Unable to generate with the original PwdHash algorithm.</string>
+    <string name="empty_address">Enter a site address.</string>
+    <string name="empty_password">Enter your site password.</string>
+</resources>

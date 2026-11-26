@@ -1,0 +1,151 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 77;
+    objects = {
+        B10000000000000000000001 = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastUpgradeCheck = 2710;
+            };
+            buildConfigurationList = B1000000000000000000000A;
+            compatibilityVersion = "Xcode 16.0";
+            developmentRegion = en;
+            knownRegions = (en, Base);
+            mainGroup = B10000000000000000000004;
+            preferredProjectObjectVersion = 77;
+            productRefGroup = B10000000000000000000005;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (B10000000000000000000002);
+        };
+        B10000000000000000000002 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = B1000000000000000000000B;
+            buildPhases = (B10000000000000000000006, B10000000000000000000007, B10000000000000000000008);
+            buildRules = ();
+            dependencies = ();
+            name = PwdHash;
+            productName = PwdHash;
+            productReference = B10000000000000000000003;
+            productType = "com.apple.product-type.application";
+        };
+        B10000000000000000000003 = {
+            isa = PBXFileReference;
+            explicitFileType = wrapper.application;
+            includeInIndex = 0;
+            path = PwdHash.app;
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        B10000000000000000000004 = {
+            isa = PBXGroup;
+            children = (
+                B20000000000000000000001, B20000000000000000000002, B20000000000000000000003,
+                B20000000000000000000004, B20000000000000000000005, B20000000000000000000006,
+                B20000000000000000000007, B20000000000000000000008, B20000000000000000000009,
+                B2000000000000000000000A, B10000000000000000000005,
+            );
+            sourceTree = "<group>";
+        };
+        B10000000000000000000005 = {
+            isa = PBXGroup;
+            children = (B10000000000000000000003);
+            name = Products;
+            sourceTree = "<group>";
+        };
+        B10000000000000000000006 = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                B30000000000000000000001, B30000000000000000000002, B30000000000000000000003,
+                B30000000000000000000004, B30000000000000000000005, B30000000000000000000006,
+                B30000000000000000000007,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        B10000000000000000000007 = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        B10000000000000000000008 = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (B30000000000000000000008, B30000000000000000000009, B3000000000000000000000A);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        B1000000000000000000000A = {
+            isa = XCConfigurationList;
+            buildConfigurations = (B1000000000000000000000C);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        B1000000000000000000000B = {
+            isa = XCConfigurationList;
+            buildConfigurations = (B1000000000000000000000D);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        B1000000000000000000000C = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ARCHS = "arm64 x86_64";
+                CLANG_ENABLE_MODULES = YES;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                MACOSX_DEPLOYMENT_TARGET = 13.0;
+                ONLY_ACTIVE_ARCH = NO;
+                SDKROOT = macosx;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                SWIFT_VERSION = 6.0;
+            };
+            name = Release;
+        };
+        B1000000000000000000000D = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "App/PwdHash.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                ENABLE_APP_SANDBOX = YES;
+                ENABLE_HARDENED_RUNTIME = YES;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = "App/Info.plist";
+                MARKETING_VERSION = 1.0;
+                PRODUCT_BUNDLE_IDENTIFIER = app.nmic.pwdhash;
+                PRODUCT_MODULE_NAME = PwdHashMac;
+                PRODUCT_NAME = PwdHash;
+                PWDHASH_MACOS_ASSET_DIR = "$(SRCROOT)/../../.build/macos";
+                SKIP_INSTALL = NO;
+                SUPPORTED_PLATFORMS = macosx;
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        B20000000000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddressCaution.swift; path = "App/AddressCaution.swift"; sourceTree = "<group>"; };
+        B20000000000000000000002 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "App/AppDelegate.swift"; sourceTree = "<group>"; };
+        B20000000000000000000003 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = "App/main.swift"; sourceTree = "<group>"; };
+        B20000000000000000000004 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordViewController.swift; path = "App/PasswordViewController.swift"; sourceTree = "<group>"; };
+        B20000000000000000000005 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecretField.swift; path = "App/SecretField.swift"; sourceTree = "<group>"; };
+        B20000000000000000000006 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IdleDeadline.swift; path = "../IOS/PwdHash/Core/IdleDeadline.swift"; sourceTree = "<group>"; };
+        B20000000000000000000007 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LegacyPwdHash.swift; path = "../IOS/PwdHash/Core/LegacyPwdHash.swift"; sourceTree = "<group>"; };
+        B20000000000000000000008 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = PWDHASH_MACOS_ASSET_DIR; };
+        B20000000000000000000009 = { isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = "../IOS/PwdHash/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+        B2000000000000000000000A = { isa = PBXFileReference; lastKnownFileType = text; name = ThirdPartyNotices.txt; path = "../IOS/PwdHash/ThirdPartyNotices.txt"; sourceTree = "<group>"; };
+        B30000000000000000000001 = { isa = PBXBuildFile; fileRef = B20000000000000000000001; };
+        B30000000000000000000002 = { isa = PBXBuildFile; fileRef = B20000000000000000000002; };
+        B30000000000000000000003 = { isa = PBXBuildFile; fileRef = B20000000000000000000003; };
+        B30000000000000000000004 = { isa = PBXBuildFile; fileRef = B20000000000000000000004; };
+        B30000000000000000000005 = { isa = PBXBuildFile; fileRef = B20000000000000000000005; };
+        B30000000000000000000006 = { isa = PBXBuildFile; fileRef = B20000000000000000000006; };
+        B30000000000000000000007 = { isa = PBXBuildFile; fileRef = B20000000000000000000007; };
+        B30000000000000000000008 = { isa = PBXBuildFile; fileRef = B20000000000000000000008; };
+        B30000000000000000000009 = { isa = PBXBuildFile; fileRef = B20000000000000000000009; };
+        B3000000000000000000000A = { isa = PBXBuildFile; fileRef = B2000000000000000000000A; };
+    };
+    rootObject = B10000000000000000000001;
+}

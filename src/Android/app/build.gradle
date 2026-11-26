@@ -1,0 +1,63 @@
+plugins { id 'com.android.application' }
+
+layout.buildDirectory.set(rootProject.file('../../.build/android/app'))
+def notices = layout.buildDirectory.dir('generated/notices')
+def signingPropertiesPath = System.getenv('PWDHASH_ANDROID_SIGNING_PROPERTIES')
+def uploadSigning = new Properties()
+if (signingPropertiesPath) {
+    def uploadSigningFile = new File(signingPropertiesPath)
+    if (!uploadSigningFile.isFile()) {
+        throw new GradleException('PWDHASH_ANDROID_SIGNING_PROPERTIES must point to a signing properties file.')
+    }
+    uploadSigningFile.withInputStream { uploadSigning.load(it) }
+    ['storeFile', 'storePassword', 'keyAlias', 'keyPassword'].each { name ->
+        if (!uploadSigning.getProperty(name)) {
+            throw new GradleException("Missing ${name} in Android upload signing properties")
+        }
+    }
+}
+
+android {
+    namespace 'app.nmic.pwdhash'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'app.nmic.pwdhash'
+        minSdk 29
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+        testInstrumentationRunner 'app.nmic.pwdhash.test.PwdHashInstrumentation'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets.main.assets.srcDir(notices)
+    sourceSets.androidTest.assets.srcDir(rootProject.file('../../.build/android-test-assets'))
+    signingConfigs {
+        if (signingPropertiesPath) {
+            release {
+                storeFile new File(uploadSigning.getProperty('storeFile'))
+                storePassword uploadSigning.getProperty('storePassword')
+                keyAlias uploadSigning.getProperty('keyAlias')
+                keyPassword uploadSigning.getProperty('keyPassword')
+                storeType uploadSigning.getProperty('storeType', 'PKCS12')
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (signingPropertiesPath) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    lint { abortOnError true }
+}
+
+tasks.register('copyOriginalNotice', Copy) {
+    from rootProject.file('../IOS/PwdHash/ThirdPartyNotices.txt')
+    into notices
+}
+tasks.named('preBuild').configure { dependsOn 'copyOriginalNotice' }

@@ -1,0 +1,19 @@
+PwdHash
+Copyright 2026 Nenad Micic
+
+The original work in this repository is licensed under the Apache License,
+Version 2.0. See LICENSE.
+
+This project is based on the original Stanford PwdHash project. The native
+ports retain the original BSD-3-Clause notice for the password generation
+and domain extraction code (Copyright 2005 Collin Jackson). See
+src/IOS/PwdHash/ThirdPartyNotices.txt. The reference JavaScript in
+Reference/pwdhash-website retains its original copyright and licence headers.
+
+The test-only JavaScript MD5 implementation by Paul Johnston and contributors
+is derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm.
+Its upstream BSD licence and RSA attribution terms are reproduced in
+LICENSES/Paul-Johnston-JavaScript-MD5.txt.
+
+The Gradle wrapper and its third-party notices are distributed in
+src/Android/gradle/wrapper under their own terms.

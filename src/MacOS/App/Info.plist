@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key><string>PwdHash</string>
+    <key>CFBundleName</key><string>PwdHash</string>
+    <key>CFBundleIdentifier</key><string>app.nmic.pwdhash</string>
+    <key>CFBundleExecutable</key><string>PwdHash</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleSupportedPlatforms</key><array><string>MacOSX</string></array>
+    <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundleIconName</key><string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>ITSAppUsesNonExemptEncryption</key><false/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSSupportsAutomaticTermination</key><false/>
+    <key>NSSupportsSuddenTermination</key><false/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>NSHumanReadableCopyright</key><string>Personal hobby project by Nenad Micic. Based on Stanford PwdHash.</string>
+</dict>
+</plist>

@@ -1,0 +1,2 @@
+# Keep the upstream compatibility reference byte-for-byte unchanged.
+Reference/pwdhash-website/** -text -whitespace
